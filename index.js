@@ -34,6 +34,7 @@ allButtons[1].addEventListener("click", () => {
   }
 });
 const congratsElements = () => {
+  ageChecker.style.display = "none";
   const header = document.createElement("h1");
   const pTag = document.createElement("h3");
   const callNowBtn = document.createElement("button");
@@ -51,7 +52,7 @@ const congratsElements = () => {
   callNowBtn.textContent = "Call Now (888) 227-7051";
   counterText.textContent = `ACT FAST! Due to high call demand, your hotline will remain available for the next:`;
   counterText.appendChild(counterTimer);
-  counterTimer.textContent = "00:00";
+  counterTimer.textContent = "02:00";
   counterTimer.style.color = "red";
   counterTimer.classList = ["timer"];
   counterText.style.fontWeight = "700";
@@ -61,6 +62,7 @@ const congratsElements = () => {
   document.querySelector(".buttons").appendChild(callNowBtn);
   document.querySelector(".buttons").appendChild(counterText);
   setInterval(start, 1000);
+
   // document.querySelector(".buttons").appendChild(counterTimer);
 };
 let timer = "";
