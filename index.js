@@ -6,12 +6,6 @@ allButtons[0].addEventListener("click", (e) => {
       "Are you on Medicare or Medicaid?";
     allButtons[0].value++;
     console.log("hi");
-  } else {
-    document.querySelectorAll("button").forEach((e) => {
-      e.style.display = "hidden";
-      console.log(e.style.display);
-    });
   }
-
-  //   console.log(clickTimes);
+  console.log((document.querySelector(".ageChecker").style.display = "none"));
 });
